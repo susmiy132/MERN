@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Furniture Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#cfcbd8]">
+
+    <section class="relative h-screen flex items-center justify-between px-20">
+
+        <!-- Lamp -->
+        <div class="absolute left-20 top-0">
+            <img src="lamp.png" class="w-40">
+        </div>
+
+        <!-- Chair Section -->
+        <div class="relative flex items-center justify-center ml-auto">
+
+            <div class="absolute w-[500px] h-[500px] bg-purple-200 rounded-full opacity-40"></div>
+
+            <img src="chair.png" class="relative w-[400px]">
+
+        </div>
+
+        <!-- Discount -->
+        <div
+            class="absolute top-20 right-20 bg-cyan-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-center font-bold">
+            50% <br> off
+        </div>
+
+        <!-- Bottom dots -->
+        <div class="absolute bottom-20 left-1/2 flex gap-3">
+
+            <div class="w-3 h-3 bg-pink-500 rounded-full"></div>
+            <div class="w-3 h-3 border-2 border-pink-500 rotate-45"></div>
+            <div class="w-3 h-3 border-2 border-pink-500 rotate-45"></div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

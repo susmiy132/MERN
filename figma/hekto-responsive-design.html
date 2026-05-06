@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #7E33E0;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            gap: 30px;
+        }
+
+        .email-contact {
+            display: flex;
+            margin-left: 15rem;
+            margin-right: 15rem;
+            gap: 25px;
+        }
+
+        .email {
+            display: flex;
+            height: 15px;
+            font-family: sans-serif;
+            align-items: center;
+            font-weight: 700;
+            gap: 5px;
+        }
+
+        .contact {
+            display: flex;
+            height: 15px;
+            font-family: sans-serif;
+            align-items: center;
+            font-weight: 700;
+            gap: 5px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .info {
+            background: none;
+            border: none;
+            font-weight: 700;
+            background-color: #7E33E0;
+            color: white;
+        }
+
+        .coin {
+            background: none;
+            border: none;
+            background-color: #7E33E0;
+            color: white;
+            font-weight: 700;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-btn {
+            background-color: #7E33E0;
+            color: white;
+            background: none;
+            border: none;
+            font-weight: 700;
+        }
+
+        .wishlist {
+            display: flex;
+            align-items: center;
+        }
+
+        .wishlist-btn {
+            color: white;
+            background: none;
+            border: none;
+            font-weight: 700;
+        }
+
+        .cart {}
+
+        nav {
+            max-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #0D0E43;
+            background-color: white;
+            width: 100%;
+            padding: 10px;
+        }
+
+        h1 {
+            padding: 0;
+            margin-left: 15rem;
+            margin-right: 10rem;
+            font-weight: 600;
+        }
+
+        .home-pages {
+            background-color: white;
+            background: none;
+            border: none;
+            color: #FB2E86;
+            font-weight: 400;
+        }
+
+        .button-content {
+            margin-right: 10rem;
+        }
+
+        .btn {
+            background-color: white;
+            border: none;
+            font-weight: 400;
+        }
+
+        .search-content {
+            width: 15rem;
+            height: 1.20rem;
+            color: #0D0E43;
+            border: 2px solid #E7E6EF;
+        }
+
+        form {
+            position: relative;
+        }
+
+        form input {
+            border: 1px solid #E7E6EF;
+        }
+
+        form svg {
+            background-color: #FB2E86;
+            color: white;
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        main {
+            display: flex;
+            height: 756px;
+            background-color: #F2F0FF;
+        }
+
+        .lamp-img {
+            margin-top: 2px;
+            height: 250px;
+            width: 250px;
+        }
+
+        .img-circle {
+            margin: 2rem;
+            height: 320px;
+            width: 500px;
+            position: relative;
+        }
+
+        .ellipse1-img {
+            top: 50px;
+            height: 320px;
+            width: 320px;
+            display: block;
+        }
+
+        .ellipse2-img {
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            width: 320px;
+            height: 320px;
+        }
+
+        .chair-img {
+            position: absolute;
+            left: 0px;
+            top: 2.5rem;
+            width: 290px;
+            height: 290px;
+        }
+
+        .vector-img {
+            position: absolute;
+            right: 7.3rem;
+            top: 10px;
+            width: 60px;
+            height: 60px;
+        }
+
+        label {
+            position: absolute;
+            right: 6.9rem;
+            top: 17px;
+            width: 50px;
+            height: 50px;
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="email-contact">
+            <div class="email">
+
+                <img src="https://img.icons8.com/?size=100&id=4pM4OmHKW2G4&format=png&color=FFFFFF" alt="">
+                <p>mhhasanul@gmail.com</p>
+            </div>
+
+            <div class="contact">
+                <img src="https://img.icons8.com/?size=100&id=BBf95mK0q8NH&format=png&color=FFFFFF" alt="">
+                <p>(12345)67890</p>
+            </div>
+        </div>
+
+        <div class="information">
+            <select class="info" name="language">
+                <option value="English">English</option>
+                <option value="Nepali">Nepali</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="currency">
+            <select class="coin" name="Currency">
+                <option value="USD"> USD</option>
+                <option value="NPR"> NPR</option>
+                <option value="AUD">AUD</option>
+                <option value="INR">INR</option>
+                <option value="MYR">MYR</option>
+            </select>
+        </div>
+
+        <div class="login">
+            <button class="login-btn">Login</button>
+            <img src="https://img.icons8.com/?size=100&id=WNS8XGkd1Rhp&format=png&color=FFFFFF" alt="">
+        </div>
+
+        <div class="wishlist">
+            <button class="wishlist-btn">Wishlist</button>
+            <img src="https://img.icons8.com/?size=100&id=85038&format=png&color=FFFFFF" alt="">
+        </div>
+
+        <div class="cart">
+            <img src="https://img.icons8.com/?size=100&id=85080&format=png&color=FFFFFF" alt="">
+        </div>
+    </header>
+
+    <nav>
+        <h1>Hekto</h1>
+
+        <div class="pages">
+            <select class="home-pages" name="HomePage">
+                <option value="Home">Home</option>
+                <option value="Page">Page</option>
+                <option value="Blog">Blog</option>
+                <option value="Products">Products</option>
+                <option value="Shop">Shop</option>
+                <option value="Contact">Contact</option>
+                <option value="About">About</option>
+            </select>
+        </div>
+
+        <div class="button-content">
+            <button class="btn">Pages</button>
+            <button class="btn">Products</button>
+            <button class="btn">Blog</button>
+            <button class="btn">Shop</button>
+            <button class="btn">Contact</button>
+        </div>
+
+        <form>
+            <input class="search-content" placeholder="Search...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+        </form>
+
+    </nav>
+
+    <main>
+        <div>
+            <img class="lamp-img" src="./lamp.png" alt="">
+        </div>
+
+        <div class="">
+            <p>Best Furniture For Your Castle</p>
+            <h1>New Furniture Collection Trends in 2020</h1>
+            <p>Lorem</p>
+            <button class="btn-shop">Shop Now</button>
+        </div>
+
+        <div class="img-circle">
+            <img class="ellipse1-img" src="./Ellipse 60.png" alt="">
+            <img class="ellipse2-img" src="./Ellipse 60.png" alt="">
+            <div>
+                <img class="chair-img" src="./chair.png" alt="">
+                <div>
+                    <img class="vector-img" src="./Vector 14.png" alt="">
+                    <label for="">50% off</label>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
