@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            position: relative;
+            width: 50%;
+        }
+
+        form input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+
+        form svg {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .blog {
+            border: 1px solid gray;
+            padding: 1rem;
+            width: calc(25% - 15px);
+        }
+
+        .blog img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <input placeholder="Search..." />
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+        </svg>
+    </form>
+
+    <br><br>
+
+    <h1>My Blogs</h1>
+
+    <div class="blogs">
+
+        <div class="blog">
+            <img src="https://placehold.co/200x200" alt="">
+            <h2>My Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog">
+            <img src="https://placehold.co/200x200" alt="">
+            <h2>My Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog">
+            <img src="https://placehold.co/200x200" alt="">
+            <h2>My Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog">
+            <img src="https://placehold.co/200x200" alt="">
+            <h2>My Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="blog">
+            <img src="https://placehold.co/200x200" alt="">
+            <h2>My Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

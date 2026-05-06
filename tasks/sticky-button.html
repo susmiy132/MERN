@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Button with scroll page</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 200vh;
+            background-color: azure;
+        }
+
+        .content h1 {
+            font-weight: bold;
+        }
+
+        .floating-btn {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            border: 10px;
+            right: 20px;
+            border: 10px;
+            border-radius: 30px;
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>My Content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint earum laudantium fuga, ipsam quae cumque
+            iusto vero eum, quidem deleniti molestias voluptas ut? Reprehenderit architecto autem quod soluta cum.</p>
+    </div>
+    <button class="floating-btn">&uarr;</button>
+</body>
+
+</html>

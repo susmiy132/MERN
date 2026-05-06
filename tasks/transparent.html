@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Backgrount Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: aliceblue;
+            min-height: 100vh;
+            padding: 100px;
+        }
+
+        .open-btn {
+            padding: 14px 28px;
+            background-color: rgb(26, 26, 124);
+            color: white;
+            border: 10px;
+            border-radius: 10px;
+            font: 400;
+            cursor: pointer;
+        }
+
+        .box {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: aliceblue;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .box.show {
+            display: flex;
+        }
+
+        .box-modal {
+            width: 500px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .box-modal h2 {
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            background: #1677ff;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Content</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia impedit quibusdam animi eaque non
+        recusandae laudantium esse! Vitae aliquid, modi natus accusantium assumenda libero veniam excepturi soluta harum
+        magnam.</p>
+    <button class="open-btn" onclick="openBox()">
+        Open Box
+    </button>
+
+    <div class="box" id="box">
+        <div class="box-modal">
+            <span class="close-btn" onclick="closeBox()">&times;</span>
+            <h2>Authentication</h2>
+
+            <div class="row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm password">
+
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <script>
+        function openBox() {
+            document.getElementById("box").classList.add("show");
+        }
+
+        function closeBox() {
+            document.getElementById("box").classList.remove("show");
+        }
+
+    </script>
+</body>
+
+</html>
